@@ -157,7 +157,7 @@ color: var(--accent-color) ;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.142;
     letter-spacing: 0.02em;
   }
   
@@ -204,8 +204,7 @@ color: var(--accent-color) ;
   display: inline-block;
   width: 100%;
   height: 4px;
-  background-color: var(--accent-color)
-  ;
+  background-color: var(--accent-color);
   border-radius: 2px;
 }
 
@@ -317,7 +316,8 @@ rgba(47, 48, 58, 0.4)),
         0px 2px 1px rgba(0, 0, 0, 0.2);
         transform: translate(-50%, -50%) scale(1);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      background-color: var(--white-text-color);
+        
+        background-color: var(--white-text-color);
     }
     
     .modal-button {
@@ -339,7 +339,6 @@ rgba(47, 48, 58, 0.4)),
     }
     
     .close-black {
-     
       width: 18px;
       height: 18px;
       right:5px;
@@ -347,6 +346,7 @@ rgba(47, 48, 58, 0.4)),
       fill: currentColor;
     }
     
+
   .visually-hidden {
     position: absolute;
     width: 1px;
@@ -553,6 +553,8 @@ rgba(47, 48, 58, 0.4)),
 
 .element-svg .link-svg {
   color: var(--snw);
+  transition-property: transform;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .element-svg .link-svg:hover,
@@ -653,6 +655,8 @@ rgba(47, 48, 58, 0.4)),
   fill: var(--snw);
   border: 1px solid var(--snw);
   border-radius: 4px;
+  transition-property: transform;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cost-link:hover, 
@@ -688,8 +692,10 @@ rgba(47, 48, 58, 0.4)),
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
     color: var(--white-text-color);
+    transition-property: transform;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   }
   
   .address:hover,
@@ -703,6 +709,8 @@ rgba(47, 48, 58, 0.4)),
   .contact-links-footer .contact-title {
     
     color: var(--white-light-text-color);
+    transition-property: transform;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contact-title {
     margin-bottom: 9px;
@@ -774,6 +782,8 @@ rgba(47, 48, 58, 0.4)),
     to right,
   rgba(255, 255, 255, 0.1),
   rgba(255, 255, 255, 0.1));
+  transition-property: transform;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .link-svg-footer {
@@ -881,8 +891,7 @@ rgba(47, 48, 58, 0.4)),
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.8),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-property: transform;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 
   .main-main {
@@ -921,10 +930,13 @@ rgba(47, 48, 58, 0.4)),
   
   .card-content {
     padding: 20px 24px;
+    border: 1px solid var(--snw);
   }
   
   .element-card {
     border-radius: 5px;
+    transition-property: transform;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .element:hover,
   .element:focus {
@@ -932,8 +944,7 @@ rgba(47, 48, 58, 0.4)),
     0px 4px 4px rgba(0, 0, 0, 0.6),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
-    transition-property: transform;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
   .contacts {
     display: block;
