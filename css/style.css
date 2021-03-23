@@ -77,7 +77,7 @@ a {
 }
 
 .contact-links .links {
-  transition-property: color, background-color, box-shadow;
+  transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
@@ -185,7 +185,7 @@ color: var(--accent-color) ;
 }
 .page-links .links {
   position: relative; 
-  transition-property: color, background-color, box-shadow;
+  transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
@@ -555,15 +555,18 @@ rgba(47, 48, 58, 0.4)),
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--snw)
+  color: var(--snw);
+  transition-property: fill, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
   
 }
 
 .element-svg .link-svg {
   color: var(--snw);
-  transition-property: fill, background-color;
+  /*transition-property: fill, background-color;
   transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition-timing-function: var(--transition-timing-function);*/
 }
   
 .element-svg .link-svg:hover,
@@ -720,7 +723,7 @@ rgba(47, 48, 58, 0.4)),
   .contact-links-footer .contact-title {
     
     color: var(--white-light-text-color);
-    transition-property: color, background-color;
+  transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   }
@@ -875,6 +878,9 @@ rgba(47, 48, 58, 0.4)),
   
   .filters .filter-element {
     margin-right: 8px;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
   }
   .btn {
     padding: 6px 22px;
@@ -891,7 +897,7 @@ rgba(47, 48, 58, 0.4)),
     cursor: pointer;
     background-color: var(--white-secondary-color);
     letter-spacing: 0.03em;
-    transition-property: color, background-color, box-shadow;
+    transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
   }
@@ -946,11 +952,14 @@ rgba(47, 48, 58, 0.4)),
     padding: 20px 24px;
     border-radius: 5px;
     border-bottom: 1px solid var(--snw);
+    /*transition-property: color, background-color, box-shadow;
+   transition-duration: var(--transition-duration);
+   transition-timing-function: var(--transition-timing-function);*/
   }
   
-  .element-card {
+  .element {
     
-   transition-property: color, background-color, box-shadow;
+   transition-property:box-shadow;
    transition-duration: var(--transition-duration);
    transition-timing-function: var(--transition-timing-function);
   }
